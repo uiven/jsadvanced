@@ -1,0 +1,64 @@
+.Wrapper{
+  width:295px;
+  border:1px dotted #09D8D6;
+}
+.Search {
+	background-image:url("");
+	background-repeat:no-repeat;
+	background-size:300px auto;
+	height:40px;
+}
+.PageTitle {
+	background-color:#FAFAFC;
+	height:30px;
+	padding:15px 0px 10px 0px;
+}
+  .PageTitle > span {
+
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18.666667px;
+	color:#3F008F;
+	background-color:#FAFAFC;
+  }
+.ProductTitle {
+	font-size:18.666667px;
+	padding:10px 0px 10px 0px;
+	border-top:2px solid #C7C7C9;
+	border-bottom:2px solid #C7C7C9;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.ProductStatusDetails {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+    color:black;
+}
+.Padding-10 {
+	padding-left: 10px;
+	
+}
+.StatusDetails {
+
+}
+.StatusTitle  {
+	padding-top: 10px;
+}
+  .StatusTitle > span {
+	font-weight:bold;
+   }
+.StatusTime > span {
+	font-size:12px;
+}
+.StatusInfo {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.StatusBorder {
+	
+	border-bottom:2px solid #C7C7C9;
+}
+
+   .StatusInfo >a {
+	color:#495192;
+	text-decoration:none;
+	font-weight:bold;
+    }

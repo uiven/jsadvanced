@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
+<head>
+    <title></title>
+    <script src="Js/jquery-2.1.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body>
+    <div id="resultDiv" ng-controller="DemoController">
+        <span>{{data}}</span><br />
+        <span ng-bind="data1"></span><br />
+       <span ng-bind-template="{{data}} - {{data1| uppercase}} + {{data2| lowercase}}"></span><br />
+        <span>{{value}}</span><br />
+        <span ng-bind-template="{{value}}-{{value1}}"></span><br />
+        <span ng-bind-template="{{value2 |number:2}}-{{value3|currency}}"></span><br />
+    </div>
+    <script>
+        function DemoController($scope) {
+            $scope.data = "This info";
+            $scope.data1 = "This info is good";
+            $scope.data2 = "THIS INFO";
+            $scope.value = 10.645;
+            $scope.value1 = 10.64546;
+            $scope.value2 = 10.64589;
+            $scope.value3 = 10.9;
+
+
+        }
+    </script>
+</body>
+</html>

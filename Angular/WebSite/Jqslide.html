@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style>
+        .ContentDiv {
+            height: 100px;
+            width: 310px;
+            border: 1px solid black;
+        }
+        .TitleDiv {
+            height: 80px;
+            width: 300px;
+            border: 1px solid green;
+            font-size:20px;
+            font-weight:bolder;
+            cursor:progress;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnSlideUp"> slideup</button>
+    <button id="btnSlideDown"> slideDown</button>
+    <button id="btnSlideToggle"> slidetoggle</button>
+    <div id="titleDiv" class="TitleDiv">
+        About iphone 6
+    </div>
+    
+    <div id="resultDiv"class="ContentDiv"> About some thing kkhasjkahdlasd dlaksjndl jdsaldsajd ndsandjskdn lasdj sl</div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnSlideUp").click(function () {
+                $("#resultDiv").slideUp(2000);
+            });
+            $("#btnSlideDown").click(function () {
+                $("#resultDiv").slideDown(2000);
+            });
+            $("#titleDiv").click(function () {
+                $("#resultDiv").slideToggle(1000);
+            });
+            $("#btnSlideToggle").click(function () {
+                $("#resultDiv").toggle(2000);
+            });
+        });
+        </script>
+        </body>
+</html>

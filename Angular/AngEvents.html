@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
+<head>
+    <title></title>
+    <script src="Js/jquery-2.1.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <style>
+        .MyClass {
+            opacity: .3;
+        }
+        .square {
+            width: 500px;
+            height: 500px;
+            background-image: url('chek.jpeg');
+            border: solid 2px;
+            text-shadow: white 0px 0px 2px;
+            font-size: 16px;
+            background-size:contain;
+        }
+    </style>
+</head>
+<body ng-controller="DemoController">
+ <img id="demoImg"class="MyClass" style="height:200px;width:200px;"src="chek.jpeg" ng-mouseenter="mus_Enter()" ng-mouseleave="mus_Leave()"ng-click="img_click()" />
+    <div class="square"></div><br />
+    <div><input type="text"id="txtData" ng-model="data" /></div>
+    <br />
+    <button ng-click="btn_click()">click</button>
+    <script>
+        function DemoController($scope) {
+            $scope.data = "Ven";
+            $scope.btn_click = function () {
+                alert($scope.data);
+            }
+            $scope.mus_Enter = function () {
+               
+                $("#demoImg").removeClass("MyClass");
+            }
+            $scope.mus_Leave = function () {
+                $("#demoImg").addClass("MyClass");
+            }
+            $scope.img_click = function () {
+                location.href= "http://google.com";
+            }
+        }
+    </script>
+</body>
+</html>

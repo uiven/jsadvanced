@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #map {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+</head>
+<body>
+    <p>http:goo.gl/19kTi</p>
+    <div id="map"></div>
+    <input type="text" id="WeatherLayer" />
+    <script>
+        var map = new google.maps.Map(document.getElementById('map'),{
+            center: new google.maps.LatLng(37.7831, -122.4039),
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+      var weatherLayer = new google.maps.weather.WeatherLayer({
+           temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+        });
+        weatherLayer.setMap(map);
+
+        var cloudLayer = new google.maps.weather.cloudLayer();
+        cloudLayer.setMap(map);
+
+    </script>
+</body>
+</html>

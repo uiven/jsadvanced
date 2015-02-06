@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <div id="mandiv1"></div>
+    <p id="p1">Slideup and down</p>
+
+    <button id="button">Click me</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#mandiv1").html('<button id="chk">click2</button>');
+
+                $("#chk").click(function () {
+                    $("#p1").css("color", "red")
+                    .slideUp(2000)
+                    .slideDown(3000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

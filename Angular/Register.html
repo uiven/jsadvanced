@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <link href="Styles/StyleShit.css" rel="stylesheet" />
+    <script src="Js/jquery-2.1.3.min.js"></script>
+    <!--script type="text/javascript" src="jquery-2.1.3.min.js"></!--script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="form-signin mg-btm">
+                <h3 class="heading-desc">
+                    <label class="lbl pull-right"><a href="BtnReg.html"> I'm already registered!</a></label>
+                    <label class="title">Register User</label>
+
+                </h3>
+                <div class="main" style="padding:0px;">
+                    <label>Email</label>    <input type="text" id="txtEmail" name="Email" class="form-control" placeholder="Email" autofocus />
+                    <label>Create Password</label>    <input type="password" id="txtCreatePassword" name="Passwprd" class="form-control" placeholder="Password" />
+                    <label>Confirm Password</label>    <input type="password" id="txtConfirmPassword" name="Passwprd" class="form-control" placeholder="Password"/>
+                    <label>Local</label>
+                    <select id="ddlLocal" class="form-control">
+                        <option value="US">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                    <label>Expires in</label>
+                    <select id="ddlExpires" class="form-control">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+
+                    </select>
+                    <span class="pull-left">Days</span><span id="date"></span>
+
+                </div>
+                <div class="login-footer">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <div class="left-section">
+
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-6 pull-right">
+                            <button type="submit" id="btnSubmit" class="btn btn-large btn btn-primary pull-right">Sign Up</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

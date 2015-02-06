@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+<!--span id="mySpan">Hello World!</span-->
+<script>
+
+var string = "heelloo world";
+var vowel = ["a", "e", "i", "o", "u"];
+
+String.prototype.character = function name() {
+    var i;
+    alert("hh");
+    for ( i = 0; i < vowel.length; i++) {
+        var secondLoop = string.length;
+        for ( j = 0; j < secondLoop; j++) {
+            if (vowel[i] == string.charAt(j)) {
+                string = string.slice(0, j).concat(string.slice(j + 1, secondLoop));
+                j--;           // take the removed character into account
+                secondLoop--;  // string is now one character shorter
+            }
+
+        }
+    }
+}
+
+string.character();
+console.log(string);
+
+//first program
+var obj = {"name":"abc"} 
+var obj1 = {"fname" : "def"}
+var obj3 = $.extend({}, obj, obj1);
+console.log(obj3);
+
+//second program
+
+var str = "this is my school and my school name is vlb this";
+var result = str.split(" ");
+var obj = {};
+result.forEach(function(element, index){     
+    var value = index+1;
+    obj[element] = value;  
+});
+JSON.stringify(obj);
+
+//
+3.
+</script>
+</body>
+</html>

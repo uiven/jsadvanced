@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    home template
+    <h1>
+        {{title}}
+    </h1>
+    <ul><li ng-repeat="items in items">{{items}}</li></ul>
+    <ul><li ng-repeat="friend in friends">{{friend.name}}:{{friend:age}}</li></ul>
+    <!--another method-->
+    <ul><li ng-class="{'special':!friend.isSpecial}" ng-repeat="fried in friends">
+        <input type="text" ng-model="friend.name" />
+            <input type="text" ng-model="friend.age" />
+        <button ng-click="friends.splice($index,1)"class="btn btn-danger">=</button>
+        </li></ul>
+    <button ng-click="save()"class="btn btn-primary">Save</button>
+    <input type="text"ng-model="title" />
+    <input type="text" ng-model="myTitle" />{{myTitle}}
+    <select ng-model="selectedValue" ng-options="value for value in items"></select>
+</body>
+</html>

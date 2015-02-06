@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="txtDemo1" /><br />
+    <input type="text" id="txtDemo" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+
+    <div id="resultDiv"> Awesome Awesom Awesom Awesom Awesom Awesom Awesom Awesom</div>
+
+
+    <button type="button" id="btnHideDiv">Hide Div</button>
+    <button type="button" id="btnShowDiv">Show Div</button>
+    <button type="button" id="btnToggleDiv">Toggle Div</button>
+    <button type="button" id="btnFadeIn">FADE IN</button>
+
+    <button type="button" id="btnFadeOut">fade out</button>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnHideDiv").click(function () {
+                $("#resultDiv").hide(2000);
+            });
+            $("#btnShowDiv").click(function () {
+                $("#resultDiv").show(3000);
+            });
+            $("#btnToggleDiv").click(function () {
+                $("#resultDiv").toggle(3000);
+            });
+            $("#btnFadeIn").click(function () {
+                $("#resultDiv").fadeIn(3000);
+            });
+            $("#btnFadeOut").click(function () {
+                $("#resultDiv").fadeOut(3000);
+            });
+        });
+
+    </script>
+</body>
+</html>

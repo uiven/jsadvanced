@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyBlogApp">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <script src="Js/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script src="Js/App.js"></script>
+    <script src="Js/BlogController.js"></script>
+</head>
+<body>
+
+    <div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">My Blog Site</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="active">Home</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="BlogController" class="container theme-showcase" role="main">
+        <div class="jumbotron" style="margin-top:20px;padding-bottom:70px;">
+        <div><h2 style="width:130px;float:left;">{{BlogCategory.Name}}</h2></div>
+        <div style="padding-top:30px;width:200px; float:right;">{{BlogCategory.CreatedDate}} - {{BlogCategory.Time}}</div>
+    </div>
+        <div style="clear:both;"></div>
+        </div>
+</body>
+</html>

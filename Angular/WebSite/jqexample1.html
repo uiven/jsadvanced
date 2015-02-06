@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="txtDemo1"/><br />
+    <input type="text" id="txtDemo" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+    <input type="text" /><br />
+
+    <div id="resultDiv"> Awesome</div>
+    
+
+    <button id="btnGetCheckbox">Get Checkbox</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#txtDemo").focus();
+            $("#txtDemo1").focus(function () {
+                alert('please fill in');
+            });
+           // $("#btnGetCheckbox").one("click", btnClick);
+            $("#btnGetCheckbox").bind("click", btnClick);
+            $("body").on("click","#chkDemo", chkClick);
+
+        });
+
+        function btnClick() {
+                    $("#resultDiv").append('<input type="checkbox"id="chkDemo"/><span>click me</span>');
+                    //$("#chkDemo").bind("click", chkClick);
+                   
+        }
+        function chkClick() {
+            alert('i am in click');
+        }
+    </script>
+</body>
+</html>

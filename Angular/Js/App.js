@@ -1,0 +1,1 @@
+﻿var MyBlogApp = angular.module('MyBlogApp', []);
